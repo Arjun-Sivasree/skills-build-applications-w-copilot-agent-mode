@@ -1,0 +1,135 @@
+
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  color: #22223b;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  background: transparent;
+}
+
+
+.App-logo {
+  height: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background: #22223b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #f8fafc;
+}
+
+
+.App-link, .navbar-brand, .nav-link {
+  color: #4f8cff !important;
+  transition: color 0.2s;
+}
+.App-link:hover, .navbar-brand:hover, .nav-link:hover, .nav-link.active {
+  color: #22223b !important;
+  text-decoration: underline;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #4f8cff 0%, #22223b 100%) !important;
+  box-shadow: 0 2px 8px rgba(34,34,59,0.08);
+}
+.navbar-brand {
+  font-size: 1.7rem;
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #e0e7ff !important;
+}
+.navbar-nav .nav-link.active {
+  color: #ffd166 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #22223b;
+  font-weight: 700;
+}
+.card-title {
+  color: #4f8cff;
+}
+
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(34,34,59,0.04);
+}
+.table-primary th {
+  background: #4f8cff !important;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e0e7ff;
+}
+.table-hover tbody tr:hover {
+  background-color: #ffd166 !important;
+  color: #22223b;
+}
+
+.btn, .btn-primary {
+  background: #4f8cff;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.btn:hover, .btn-primary:hover {
+  background: #22223b;
+  color: #ffd166;
+}
+
+.form-control:focus {
+  border-color: #4f8cff;
+  box-shadow: 0 0 0 0.2rem rgba(79,140,255,.25);
+}
+
+.modal-content {
+  border-radius: 12px;
+}
+.modal-header {
+  background: #4f8cff;
+  color: #fff;
+}
+.modal-footer {
+  background: #e0e7ff;
+}
+
+/* Custom favicon and logo tweaks */
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
